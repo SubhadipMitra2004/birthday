@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f6">
+<title>A Little Birthday World for Sonu 🎀</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap');
+:root{--pink:#f06b9a;--deep:#bc3f75;--pale:#fff0f6;--cream:#fffaf5;--lav:#eee7ff;--ink:#633b53;--mint:#dff7ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Nunito,system-ui,sans-serif;background:radial-gradient(circle at 10% 5%,#ffe0ed 0,transparent 24rem),radial-gradient(circle at 90% 25%,#e9e1ff 0,transparent 23rem),var(--cream);overflow-x:hidden}
+button,input{font:inherit}button{cursor:pointer;border:0}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #8d63cb;outline-offset:3px}
+.topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:12px clamp(16px,5vw,64px);background:#fffaf5eF;backdrop-filter:blur(12px);border-bottom:1px solid #f5d6e3}
+.brand{font-weight:800;color:var(--deep)}.brand span{font-size:1.25rem}.music-btn,.soft-btn{background:white;border:1px solid #f4c4d7;color:var(--deep);border-radius:999px;padding:10px 16px;font-weight:800;box-shadow:0 5px 16px #bc3f7510}
+section{padding:72px 20px;scroll-margin-top:65px}.wrap{width:min(1050px,100%);margin:auto}.hero{min-height:86vh;display:grid;place-items:center;text-align:center;position:relative;padding-top:50px}.hero-card{max-width:780px;width:100%;padding:clamp(28px,6vw,64px) 20px;border:1px solid #f6cfe0;border-radius:34px;background:#ffffffbd;box-shadow:0 20px 70px #c65e8b18;position:relative;overflow:hidden}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:800;color:#bd6b91}.script{font-family:Pacifico,cursive;font-weight:400;color:var(--deep)}h1{font-size:clamp(3rem,9vw,6.4rem);line-height:1.1;margin:14px 0}h2{font-size:clamp(2rem,5vw,3.3rem);margin:0 0 12px}.lead{font-size:clamp(1rem,2.3vw,1.25rem);line-height:1.8;max-width:580px;margin:14px auto 26px}.btn{background:linear-gradient(135deg,#f582aa,#e84d88);color:white;border-radius:999px;padding:14px 23px;font-weight:800;box-shadow:0 8px 20px #e84d8830;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 25px #e84d8840}.btn.secondary{background:white;color:var(--deep);border:1px solid #f5c5d8;box-shadow:none}.tiny{font-size:.9rem;color:#9a7186}.float{position:absolute;animation:bob 4s ease-in-out infinite;pointer-events:none}.f1{top:12%;left:9%;font-size:2rem}.f2{top:20%;right:9%;font-size:2.5rem;animation-delay:-1s}.f3{bottom:12%;left:13%;font-size:1.8rem;animation-delay:-2s}.f4{bottom:10%;right:12%;font-size:2rem;animation-delay:-.5s}@keyframes bob{50%{transform:translateY(-12px) rotate(6deg)}}.section-head{text-align:center;margin-bottom:30px}.section-head p{max-width:620px;margin:0 auto;line-height:1.7}.panel{background:#ffffffc9;border:1px solid #f5d5e2;border-radius:28px;padding:clamp(20px,4vw,34px);box-shadow:0 12px 40px #a74a7210}
+.letter-layout{display:grid;grid-template-columns:1fr 1.3fr;gap:24px;align-items:center}.envelope{background:linear-gradient(145deg,#ffc9dc,#f58db5);border-radius:22px;padding:35px 15px;text-align:center;color:#9b2d60;min-height:220px;display:grid;place-items:center;font-size:4rem;box-shadow:inset 0 -12px 0 #e779a6}.letter{line-height:1.9;white-space:pre-line}.letter strong{color:var(--deep)}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.photo-card{background:white;border:1px solid #f4d0df;padding:10px 10px 14px;box-shadow:0 8px 18px #77364b12;transform:rotate(var(--tilt));transition:transform .2s}.photo-card:hover{transform:rotate(0) translateY(-5px)}.photo-frame{height:200px;background:linear-gradient(135deg,#ffe2ec,#e9e2ff);display:grid;place-items:center;overflow:hidden;border-radius:4px;color:#b65a83;text-align:center;padding:10px}.photo-frame img{width:100%;height:100%;object-fit:cover}.photo-caption{text-align:center;font-family:Pacifico,cursive;color:#a33d6c;padding-top:12px}.upload-note{text-align:center;margin:22px auto 0;max-width:650px;font-size:.9rem;line-height:1.7;color:#8e6c80}.game-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.cake-wrap{text-align:center;background:linear-gradient(160deg,#fff5fa,#fff);border-radius:22px;padding:26px 14px;border:1px solid #f6d6e3}.cake{font-size:7rem;filter:drop-shadow(0 8px 5px #d65c8c20);margin:4px}.candles{display:flex;justify-content:center;gap:12px;margin:0 0 15px}.candle{font-size:2rem;background:#fff0f6;border-radius:50%;width:52px;height:52px}.candle.out{filter:grayscale(1);opacity:.45}.balloons{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}.balloon{min-height:130px;border-radius:55% 55% 48% 48%;background:linear-gradient(140deg,#ffc1d8,#f47ca8);color:#8d315b;padding:18px 8px 25px;box-shadow:inset -9px -9px 0 #d9548c18;position:relative;font-weight:800;transition:transform .2s}.balloon:nth-child(3n+2){background:linear-gradient(140deg,#e6d8ff,#bba3f2)}.balloon:nth-child(3n){background:linear-gradient(140deg,#d9f8f0,#9edecb)}.balloon:after{content:"";position:absolute;bottom:-12px;left:50%;width:1px;height:16px;background:#d99bb5}.balloon.popped{transform:scale(.2);opacity:0;pointer-events:none}.quiz-box{max-width:700px;margin:auto}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}.answer{background:white;border:1px solid #f2c9da;border-radius:14px;padding:13px;color:var(--ink);font-weight:700}.answer:hover,.answer.selected{background:#ffe4ef;border-color:#e875a0}.progress{height:8px;background:#f9dce8;border-radius:99px;overflow:hidden;margin:15px 0}.progress span{display:block;height:100%;width:0;background:#e96598;transition:width .3s}.gift{font-size:7rem;animation:bob 3s infinite}.hidden{display:none!important}.final-card{text-align:center;background:linear-gradient(145deg,#fff,#fff0f7);border:1px solid #f4cadb;border-radius:30px;padding:clamp(25px,5vw,48px)}.final-message{max-width:690px;margin:20px auto;line-height:2;font-size:1.08rem;white-space:pre-line}.confetti{position:fixed;top:-20px;z-index:100;pointer-events:none;animation:fall 3.5s linear forwards;font-size:1.2rem}@keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:0}}footer{text-align:center;padding:35px 20px;color:#9b7187;font-size:.9rem}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#693b55;color:white;padding:12px 18px;border-radius:999px;z-index:99;box-shadow:0 8px 30px #0002;max-width:90vw;text-align:center}
+@media(max-width:720px){section{padding:52px 16px}.letter-layout,.game-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr);gap:12px}.photo-frame{height:160px}.balloons{gap:8px}.balloon{min-height:110px;font-size:.85rem;padding:15px 6px 20px}.topbar{padding:10px 14px}.brand{font-size:.9rem}.music-btn{padding:9px 12px}.hero{min-height:78vh}.f1{left:3%}.f2{right:3%}.answers{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span>🎀</span> A Little World for Sonu</div>
+  <button class="music-btn" id="musicBtn" aria-label="Play or pause birthday music">♫ Music: off</button>
+</header>
+<main>
+<section class="hero" id="home">
+  <span class="float f1">♡</span><span class="float f2">🎀</span><span class="float f3">✦</span><span class="float f4">🌷</span>
+  <div class="hero-card">
+    <div class="eyebrow">18 October · A day full of magic</div>
+    <h1 class="script">Hey, Sonu!</h1>
+    <p class="lead">Psst… someone very special has a birthday today. A tiny corner of the internet, made just to make you smile. 💗</p>
+    <button class="btn" onclick="openSurprise()">Open Your Surprise ♡</button>
+    <p class="tiny" style="margin-top:18px">Made with love, giggles, and a little bit of magic ✨</p>
+  </div>
+</section>
+
+<section id="letter">
+ <div class="wrap">
+  <div class="section-head"><h2 class="script">A little note for you 💌</h2><p>Before the fun begins, there's something sweet waiting for you.</p></div>
+  <div class="panel letter-layout">
+   <div class="envelope" aria-hidden="true">💌<div style="font-size:1rem;font-weight:800">For Sonu, with love</div></div>
+   <div><div class="letter" id="letterText">Dear Sonu,
+
+Happy Birthday! 🎂
+
+I hope your day is filled with your favourite people, unexpected little joys, lots of laughter, and all the love you deserve. You make life brighter just by being yourself.
+
+Ready for your tiny birthday adventure? There are memories, games, and one last surprise waiting below. 💗
+
+With lots of love,
+Your birthday surprise team ♡</div>
+   <button class="btn secondary" onclick="document.querySelector('#memories').scrollIntoView({behavior:'smooth'})" style="margin-top:18px">Let's explore ↓</button></div>
+  </div>
+ </div>
+</section>
+
+<section id="memories">
+ <div class="wrap">
+  <div class="section-head"><h2 class="script">Our little memories 📸</h2><p>Some moments are too precious to stay in a camera roll. Add your favourite sister photos to make this page truly yours.</p></div>
+  <div class="gallery" id="gallery">
+   <div class="photo-card" style="--tilt:-2deg"><div class="photo-frame"><img src="D:\sonu-birthday\assets\images\sisters-1.jpg" alt="dida hugging sonu"><div><div style="font-size:2.5rem"></div></div></div><div class="photo-caption">Sisters forever ♡</div></div>
+   <div class="photo-card" style="--tilt:2deg"><div class="photo-frame"><img src="D:\sonu-birthday\assets\images\sisters-2.Jpg" alt=""><div><div style="font-size:2.5rem">🌸</div><b>A memory full of smiles</b></div></div><div class="photo-caption">Crazy together ✨</div></div>
+   <div class="photo-card" style="--tilt:-1deg"><div class="photo-frame"><img src="D:\sonu-birthday\assets\images\sisters-3.jpg" alt=""><div><div style="font-size:2.5rem">💗</div><b>One for the scrapbook</b></div></div><div class="photo-caption">Better together</div></div>
+  </div>
+  <div class="upload-note">
+   <label class="btn secondary" for="photoUpload">＋ Add sister photos</label>
+   <input id="photoUpload" type="file" accept="image/*" multiple hidden>
+   <p>Quick preview: choose photos from your device. To include them in the shareable website, copy them into <code>assets/images</code> and follow the README instructions.</p>
+  </div>
+ </div>
+</section>
+
+<section id="cake">
+ <div class="wrap">
+  <div class="section-head"><h2 class="script">Make a wish, Sonu! 🎂</h2><p>Tap every candle to blow it out. Don't forget to make a wish!</p></div>
+  <div class="cake-wrap">
+   <div class="candles" id="candles"><button class="candle" aria-label="Blow out candle 1" onclick="blowCandle(this)">🕯️</button><button class="candle" aria-label="Blow out candle 2" onclick="blowCandle(this)">🕯️</button><button class="candle" aria-label="Blow out candle 3" onclick="blowCandle(this)">🕯️</button></div>
+   <div class="cake" aria-hidden="true">🎂</div><p id="cakeMessage">Three little candles, a million wishes!</p>
+   <button class="btn" onclick="blowAll()">Blow all the candles ✨</button>
+  </div>
+ </div>
+</section>
+
+<section id="balloons">
+ <div class="wrap">
+  <div class="section-head"><h2 class="script">Pop the balloons! 🎈</h2><p>Each balloon has a little reminder inside. Pop them all to unlock your birthday cheer.</p></div>
+  <div class="balloons" id="balloonGrid">
+   <button class="balloon" onclick="popBalloon(this,'You are loved more than you know. 💗')">A little love ♡</button>
+   <button class="balloon" onclick="popBalloon(this,'Your laugh makes ordinary days feel special. ✨')">A sweet truth</button>
+   <button class="balloon" onclick="popBalloon(this,'May something wonderful surprise you this year. 🌷')">A wish for you</button>
+   <button class="balloon" onclick="popBalloon(this,'Sister memories are the best kind of treasure. 👭')">Sister magic</button>
+   <button class="balloon" onclick="popBalloon(this,'You deserve extra cake today. And tomorrow. 🍰')">Cake permission</button>
+   <button class="balloon" onclick="popBalloon(this,'Keep shining in your own lovely way. 🌟')">A tiny reminder</button>
+  </div>
+  <p id="balloonCount" style="text-align:center;font-weight:800;margin-top:20px">6 balloons left 🎈</p>
+ </div>
+</section>
+
+<section id="quiz">
+ <div class="wrap">
+  <div class="section-head"><h2 class="script">Sister trivia 💞</h2><p>A tiny quiz for the birthday duo. You can edit these sample questions to match real memories!</p></div>
+  <div class="panel quiz-box">
+   <div class="progress"><span id="quizProgress"></span></div>
+   <p class="tiny" id="quizStep">Question 1 of 3</p>
+   <h3 id="quizQuestion">What makes the best sister day?</h3>
+   <div class="answers" id="quizAnswers"></div>
+   <p id="quizFeedback" aria-live="polite"></p>
+   <button class="btn" id="quizNext" onclick="nextQuestion()" disabled>Choose an answer first →</button>
+  </div>
+ </div>
+</section>
+
+<section id="gift">
+ <div class="wrap">
+  <div class="section-head"><h2 class="script">One last little surprise 🎁</h2><p>You made it through the birthday adventure. Ready to unwrap your gift?</p></div>
+  <div class="final-card">
+   <div class="gift" id="giftEmoji">🎁</div>
+   <button class="btn" id="giftBtn" onclick="openGift()">Open your gift ♡</button>
+   <div id="giftReveal" class="hidden"><h2 class="script">Your gift is… MORE LOVE! 💗</h2><p class="lead">A reminder that you're special, you're appreciated, and you deserve a year full of beautiful little things.</p><button class="btn secondary" onclick="document.querySelector('#final').scrollIntoView({behavior:'smooth'})">Read your final message ↓</button></div>
+  </div>
+ </div>
+</section>
+
+<section id="final">
+ <div class="wrap">
+  <div class="final-card">
+   <div style="font-size:3rem">🌷💗🌷</div>
+   <h2 class="script">Happy Birthday, Sonu!</h2>
+   <p class="final-message" id="finalMessage">Dear Sonu,
+
+May this new year of your life bring you soft mornings, belly laughs, brave dreams, kind people, and a thousand reasons to smile.
+
+Keep being your lovely, one-of-a-kind self. I hope you always feel how much you matter to the people who love you — especially your sister.
+
+Here's to more silly moments, secret jokes, unforgettable memories, and wishes that come true.
+
+You deserve all the happiness in the world. Have the sweetest birthday ever! From your dida ♡</p>
+   <button class="btn" onclick="celebrate()">Celebrate again! 🎉</button>
+   <p class="tiny" style="margin-top:18px">A little birthday website, made with love. ♡</p>
+  </div>
+ </div>
+</section>
+</main>
+<footer>Made with ♡ for Sonu · 18 October · Keep this little world full of love.</footer>
+<audio id="birthdayAudio" loop preload="none"><source src="assets/music/birthday.mp3" type="audio/mpeg"></audio>
+<script>
+const toast=(message)=>{let t=document.createElement('div');t.className='toast';t.textContent=message;document.body.appendChild(t);setTimeout(()=>t.remove(),2600)};
+function confetti(count=65){const bits=['💗','💖','✨','🌸','🎀','⭐','💕'];for(let i=0;i<count;i++){const el=document.createElement('span');el.className='confetti';el.textContent=bits[Math.floor(Math.random()*bits.length)];el.style.left=Math.random()*100+'vw';el.style.animationDelay=Math.random()*.8+'s';el.style.fontSize=(12+Math.random()*18)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),4500)}}
+function openSurprise(){confetti(45);document.querySelector('#letter').scrollIntoView({behavior:'smooth'});toast('Surprise unlocked! Let the birthday magic begin 💗')}
+let candlesLeft=3;
+function blowCandle(el){if(el.classList.contains('out'))return;el.classList.add('out');el.textContent='💨';candlesLeft--;if(candlesLeft===0){document.getElementById('cakeMessage').textContent='Wish made! May it come true, Sonu! 🌟';confetti(55);toast('Wish sent to the universe! ✨')}else document.getElementById('cakeMessage').textContent=`${candlesLeft} candle${candlesLeft===1?'':'s'} left — make a wish!`}
+function blowAll(){document.querySelectorAll('.candle').forEach(c=>{if(!c.classList.contains('out'))blowCandle(c)});}
+let balloonsLeft=6;
+function popBalloon(el,msg){if(el.classList.contains('popped'))return;el.classList.add('popped');balloonsLeft--;toast(msg);document.getElementById('balloonCount').textContent=balloonsLeft?`${balloonsLeft} balloon${balloonsLeft===1?'':'s'} left 🎈`:'You popped them all! You are a birthday superstar! 💖';if(!balloonsLeft)confetti(35)}
+document.getElementById('photoUpload').addEventListener('change',function(e){const files=[...e.target.files];if(!files.length)return;const gallery=document.getElementById('gallery');gallery.innerHTML='';files.forEach((file,i)=>{if(!file.type.startsWith('image/'))return;const url=URL.createObjectURL(file);const card=document.createElement('div');card.className='photo-card';card.style.setProperty('--tilt',`${(i%3-1)*2}deg`);const frame=document.createElement('div');frame.className='photo-frame';const img=document.createElement('img');img.src=url;img.alt='Birthday memory '+(i+1);const caption=document.createElement('div');caption.className='photo-caption';caption.textContent=['Sisters forever ♡','Crazy together ✨','Better together 💗'][i%3];frame.appendChild(img);card.append(frame,caption);gallery.appendChild(card)});toast('Photos added to this preview! See README to include them in your shared link. 📸')});
+const questions=[
+ {q:'What makes the best sister day?',a:['Laughing at silly things','Doing a secret mission','Eating favourite snacks','All of the above!'],correct:3,why:'Correct! The best memories are a little bit of everything. 💗'},
+ {q:'What should Sonu get extra on her birthday?',a:['More hugs','Extra cake','All the attention','Everything on this list!'],correct:3,why:'Absolutely! Birthday rules say Sonu gets all the good things. 🎂'},
+ {q:'What is one thing that never goes out of style?',a:['Sister love','Matching socks','A perfect selfie','Knowing every trend'],correct:0,why:'Sister love is forever — even through the silly arguments. 👭'}
+];
+let qi=0,chosen=null,score=0;
+function renderQuestion(){const q=questions[qi];chosen=null;document.getElementById('quizQuestion').textContent=q.q;document.getElementById('quizStep').textContent=`Question ${qi+1} of ${questions.length}`;document.getElementById('quizProgress').style.width=(qi/questions.length*100)+'%';document.getElementById('quizFeedback').textContent='';const answers=document.getElementById('quizAnswers');answers.innerHTML='';q.a.forEach((a,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=a;b.onclick=()=>{chosen=i;answers.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');document.getElementById('quizNext').disabled=false};answers.appendChild(b)});document.getElementById('quizNext').textContent=qi===questions.length-1?'See your result ♡':'Next question →';document.getElementById('quizNext').disabled=true}
+function nextQuestion(){if(chosen===null)return;if(chosen===questions[qi].correct)score++;document.getElementById('quizFeedback').textContent=questions[qi].why;if(qi<questions.length-1){qi++;setTimeout(renderQuestion,650)}else{document.getElementById('quizQuestion').textContent=`You scored ${score} out of ${questions.length}!`;document.getElementById('quizStep').textContent='Quiz complete';document.getElementById('quizProgress').style.width='100%';document.getElementById('quizAnswers').innerHTML='';document.getElementById('quizFeedback').textContent='Official result: two sisters, unlimited memories, and a lifetime of love. 💞';document.getElementById('quizNext').textContent='Play again';document.getElementById('quizNext').disabled=false;document.getElementById('quizNext').onclick=()=>{qi=0;score=0;document.getElementById('quizNext').onclick=nextQuestion;renderQuestion()};confetti(20)}}
+renderQuestion();
+function openGift(){document.getElementById('giftEmoji').textContent='💝';document.getElementById('giftReveal').classList.remove('hidden');document.getElementById('giftBtn').classList.add('hidden');confetti(70);toast('A little love, just for you! 💗')}
+function celebrate(){confetti(90);toast('Happy Birthday, Sonu! 🎂💗')}
+const audio=document.getElementById('birthdayAudio'),musicBtn=document.getElementById('musicBtn');let musicOn=false;
+musicBtn.addEventListener('click',async()=>{if(!musicOn){try{await audio.play();musicOn=true;musicBtn.textContent='♫ Music: on'}catch(e){toast('Add your own birthday.mp3 to assets/music first, then tap Music again. 🎵')}}else{audio.pause();musicOn=false;musicBtn.textContent='♫ Music: off'}});
+</script>
+</body>
+</html>
