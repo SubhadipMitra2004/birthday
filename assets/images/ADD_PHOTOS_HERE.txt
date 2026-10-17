@@ -1,0 +1,1 @@
+Put the sister photos you want to include in the published website in this folder. See README.md for how to add them to the gallery.
